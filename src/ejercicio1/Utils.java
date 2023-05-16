@@ -6,6 +6,11 @@ import java.util.Scanner;
 
 public class Utils {
 		
+	/**
+	 * 
+	 * @param read
+	 * @return
+	 */
 	static public double readDouble (Scanner read) {
 		
 		double num =0.0;
@@ -20,6 +25,11 @@ public class Utils {
 		return  num;
 	}
 	
+	/**
+	 * 
+	 * @param read
+	 * @return
+	 */
 	static public int readInt (Scanner read) {
 		int num=0;
 		try {
