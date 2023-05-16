@@ -6,7 +6,5 @@ public class NegativeSecondException extends Exception {
 	public String getMessage() {
 		return "Cantidad de segundos errónea";
 	}
-	
-	
 
 }

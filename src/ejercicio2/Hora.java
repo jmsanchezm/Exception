@@ -82,26 +82,26 @@ public class Hora {
 	 * @param hora
 	 */
 	public void setHora(int hora) throws NegativeHourException {
-		if (hora > 0 && hora < 24) {
-			this.hora = hora;
-		} else {
+		if (hora < 0) {
 			throw new NegativeHourException();
+		} else {
+			this.hora = hora;
 		}
 	}
 
 	public void setMinuto(int minuto) throws NegativeMinuteException {
-		if (minuto <= 59 || minuto > 0) {
-			this.minuto = minuto;
-		}else {
+		if (minuto < 0) {
 			throw new NegativeMinuteException();
+		} else {
+			this.minuto = minuto;
 		}
 	}
 
 	public void setSegundo(int segundo) throws NegativeSecondException {
-		if (segundo <= 59 || segundo > 0) {
-			this.segundo = segundo;
-		}else {
+		if (segundo < 0) {
 			throw new NegativeSecondException();
+		} else {
+			this.segundo = segundo;
 		}
 	}
 
